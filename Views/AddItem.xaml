@@ -2,31 +2,38 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="BookLibrary.Views.AddItem"
-             Title="Добавить книгу">
+             Title="Добавить книгу"
+             BackgroundColor="#F5F5F5">
     <ScrollView>
         <StackLayout Padding="20" Spacing="15">
-            <Frame BorderColor="LightGray" CornerRadius="10" Padding="15">
+            <Frame BackgroundColor="White" CornerRadius="10" Padding="15">
                 <StackLayout Spacing="10">
-                    <Label Text="Название книги *" FontAttributes="Bold"/>
-                    <Entry x:Name="TitleEntry" Placeholder="Введите название" MaxLength="200"/>
+                    <Label Text="Название книги *" FontAttributes="Bold" TextColor="#212121"/>
+                    <Entry x:Name="TitleEntry" Placeholder="Введите название" MaxLength="200" 
+                           TextColor="#212121" PlaceholderColor="#999999" BackgroundColor="#FAFAFA"/>
 
-                    <Label Text="Автор *" FontAttributes="Bold"/>
-                    <Entry x:Name="AuthorEntry" Placeholder="Введите автора" MaxLength="150"/>
+                    <Label Text="Автор *" FontAttributes="Bold" TextColor="#212121"/>
+                    <Entry x:Name="AuthorEntry" Placeholder="Введите автора" MaxLength="150" 
+                           TextColor="#212121" PlaceholderColor="#999999" BackgroundColor="#FAFAFA"/>
 
-                    <Label Text="Жанр" FontAttributes="Bold"/>
-                    <Entry x:Name="GenreEntry" Placeholder="Введите жанр" MaxLength="100"/>
+                    <Label Text="Жанр" FontAttributes="Bold" TextColor="#212121"/>
+                    <Entry x:Name="GenreEntry" Placeholder="Введите жанр" MaxLength="100" 
+                           TextColor="#212121" PlaceholderColor="#999999" BackgroundColor="#FAFAFA"/>
 
-                    <Label Text="Год издания" FontAttributes="Bold"/>
-                    <Entry x:Name="YearEntry" Placeholder="Например: 2023" Keyboard="Numeric"/>
+                    <Label Text="Год издания" FontAttributes="Bold" TextColor="#212121"/>
+                    <Entry x:Name="YearEntry" Placeholder="Например: 2023" Keyboard="Numeric" 
+                           TextColor="#212121" PlaceholderColor="#999999" BackgroundColor="#FAFAFA"/>
 
-                    <Label Text="Количество страниц" FontAttributes="Bold"/>
-                    <Entry x:Name="PageCountEntry" Placeholder="Введите количество страниц" Keyboard="Numeric"/>
+                    <Label Text="Количество страниц" FontAttributes="Bold" TextColor="#212121"/>
+                    <Entry x:Name="PageCountEntry" Placeholder="Введите количество страниц" Keyboard="Numeric" 
+                           TextColor="#212121" PlaceholderColor="#999999" BackgroundColor="#FAFAFA"/>
 
-                    <Button Text="Добавить книгу" Clicked="AddButton_Clicked" Margin="0,20,0,0"/>
+                    <Button Text="Добавить книгу" Clicked="AddButton_Clicked" Margin="0,20,0,0" 
+                            BackgroundColor="#2196F3" TextColor="White"/>
                 </StackLayout>
             </Frame>
 
-            <Label Text="* - обязательные поля" FontSize="Small" TextColor="Gray" HorizontalOptions="Center"/>
+            <Label Text="* - обязательные поля" FontSize="Small" TextColor="#757575" HorizontalOptions="Center"/>
         </StackLayout>
     </ScrollView>
 </ContentPage>
