@@ -2,40 +2,42 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="BookLibrary.Views.AboutPage"
-             Title="О программе">
+             Title="О программе"
+             BackgroundColor="#F5F5F5">
     <ScrollView>
         <StackLayout Padding="20" Spacing="15">
-            <Frame BackgroundColor="{StaticResource Primary}" CornerRadius="10" Padding="20">
+            <Frame BackgroundColor="#2196F3" CornerRadius="10" Padding="20">
                 <StackLayout>
                     <Label Text="📚 Библиотека книг" FontSize="Large" FontAttributes="Bold" TextColor="White" HorizontalOptions="Center"/>
                     <Label Text="Версия 1.0" TextColor="White" HorizontalOptions="Center"/>
                 </StackLayout>
             </Frame>
 
-            <Frame BorderColor="LightGray" CornerRadius="10" Padding="15">
+            <Frame BackgroundColor="White" CornerRadius="10" Padding="15">
                 <StackLayout Spacing="10">
-                    <Label Text="Описание" FontSize="Medium" FontAttributes="Bold" TextColor="{StaticResource Primary}"/>
-                    <Label Text="Мобильное приложение для управления каталогом книг с использованием локальной базы данных SQLite." LineBreakMode="WordWrap"/>
+                    <Label Text="Описание" FontSize="Medium" FontAttributes="Bold" TextColor="#2196F3"/>
+                    <Label Text="Мобильное приложение для управления каталогом книг с использованием локальной базы данных SQLite. Приложение позволяет добавлять, просматривать, искать и удалять книги." 
+                           LineBreakMode="WordWrap" TextColor="#212121"/>
                 </StackLayout>
             </Frame>
 
-            <Frame BorderColor="LightGray" CornerRadius="10" Padding="15">
+            <Frame BackgroundColor="White" CornerRadius="10" Padding="15">
                 <StackLayout Spacing="10">
-                    <Label Text="Возможности" FontSize="Medium" FontAttributes="Bold" TextColor="{StaticResource Primary}"/>
-                    <Label Text="✓ Добавление новых книг"/>
-                    <Label Text="✓ Поиск по названию, автору и жанру"/>
-                    <Label Text="✓ Удаление книг из каталога"/>
-                    <Label Text="✓ Хранение данных в SQLite"/>
+                    <Label Text="Возможности" FontSize="Medium" FontAttributes="Bold" TextColor="#2196F3"/>
+                    <Label Text="✓ Добавление новых книг с валидацией" TextColor="#212121"/>
+                    <Label Text="✓ Поиск по названию, автору и жанру" TextColor="#212121"/>
+                    <Label Text="✓ Удаление книг из каталога" TextColor="#212121"/>
+                    <Label Text="✓ Хранение данных в локальной БД SQLite" TextColor="#212121"/>
                 </StackLayout>
             </Frame>
 
-            <Frame BorderColor="LightGray" CornerRadius="10" Padding="15">
+            <Frame BackgroundColor="White" CornerRadius="10" Padding="15">
                 <StackLayout Spacing="10">
-                    <Label Text="Технологии" FontSize="Medium" FontAttributes="Bold" TextColor="{StaticResource Primary}"/>
-                    <Label Text="• .NET MAUI"/>
-                    <Label Text="• SQLite"/>
-                    <Label Text="• C#"/>
-                    <Label Text="• XAML"/>
+                    <Label Text="Технологии" FontSize="Medium" FontAttributes="Bold" TextColor="#2196F3"/>
+                    <Label Text="• .NET MAUI" TextColor="#212121"/>
+                    <Label Text="• SQLite" TextColor="#212121"/>
+                    <Label Text="• C#" TextColor="#212121"/>
+                    <Label Text="• XAML" TextColor="#212121"/>
                 </StackLayout>
             </Frame>
         </StackLayout>
