@@ -24,12 +24,12 @@ jobs:
     - name: Restore packages
       run: dotnet restore BookSearch.csproj
 
-    - name: Build APK
-      run: dotnet build BookSearch.csproj -c Release -f net9.0-android -p:AndroidPackageFormat=apk
+    - name: Publish APK (готовый к установке)
+      run: dotnet publish BookSearch.csproj -c Release -f net9.0-android -p:AndroidPackageFormat=apk -p:RuntimeIdentifier=android-arm64
 
     - name: Upload APK
       uses: actions/upload-artifact@v4
       with:
         name: BookLibrary-APK
-        path: '**/bin/Release/**/*.apk'
+        path: '**/bin/Release/**/publish/*.apk'
         if-no-files-found: error
